@@ -1,0 +1,17 @@
+//let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
+//criando variáveis
+//var store = EKEventStore()
+//let calendar = store.defaultCalendarForNewReminders()
+//let calendar = store.defaultCalendarForNewEvents
+//solicitando acesso
+//store.requestAccess(to: .reminder) { granted, error in
+//    if error != nil {print("error")}}
+//store.requestAccess(to: .event) { granted, error in
+   // if error != nil {print("error")}}
+// inicio do formulário
+/* let newReminder = EKReminder(eventStore: store)
+ newReminder.calendar = calendar
+ newReminder.title = titulo
+ try! store.save(newReminder, commit: true)
+//let dueDate = Date().addingTimeInterval(60 * 60 * 24 * 3)
+ //newReminder.dueDateComponents = Calendar.current.dateComponents([.year, .month, .day], from: dueDate)*/
