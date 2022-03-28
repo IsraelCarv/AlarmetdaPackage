@@ -12,8 +12,13 @@ cli.getAnswer()
 
 
 func evento(titulo:String, horario:String){
+    let date = NSDate()
+    let calendario = NSCalendar.current
+    let hour = calendario.component(.hour, from: date as Date)
+    let minutes = calendario.component(.minute, from: date as Date)
     let store = EKEventStore()
-    
+    print(hour)
+    print(minutes)
     let dateStart = NSCalendar.current.date(
         from: DateComponents(
             year: 2022, month: 03, day: 23, hour: 19, minute: 12
