@@ -27,21 +27,22 @@ class CLI{
                 atividades[index].feito = false
             }
         }
-        self.alarmInfo()
+        self.setAlarm()
         
     }
-    func alarmInfo(){
+    func setAlarm(){
         for atividade in cli.atividades {
             if !atividade.feito {
                 print("Que horas devo te lembrar de fazer isso?" )
                 let horarioNovo = readLine()!
-              
-                evento(titulo: "comer,tomar remedio ou organizar a agenda")// self.setAlarm()
+                evento(titulo: "comer,tomar remedio ou organizar a agenda", horario: horarioNovo)// self.setAlarm()
             }
         }
     }
-//    func setAlarm(){
-//        evento(titulo: "comer,tomar remedio ou organizar a agenda")
-//
-//    }
+    func sumario() -> String {
+        print("1 - 30min\n2 - 1:00")
+        var respostaUsuario = readLine()!
+        return respostaUsuario
+    }
+
 }
